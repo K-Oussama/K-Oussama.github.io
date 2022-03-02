@@ -1787,13 +1787,13 @@ background-color: transparent !important;
   margin: 0 auto !important;
 }
 section#about {
-  margin-top: 70px;
-  padding-top: 45px;
-  padding-bottom: 150px;
+  margin-top: 70px !important;
+  padding-top: 45px !important;
+  padding-bottom: 150px !important;
 }
 section#work {
-  padding-top: 0px;
+  padding-top: 0px !important;
 }
 .back-to-top{
-  bottom: 18px;
+  bottom: 18px !important;
 }
