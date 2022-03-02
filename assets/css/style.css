@@ -1786,3 +1786,14 @@ background-color: transparent !important;
 .ml-auto, .mx-auto{
   margin: 0 auto !important;
 }
+section#about {
+  margin-top: 70px;
+  padding-top: 45px;
+  padding-bottom: 150px;
+}
+section#work {
+  padding-top: 0px;
+}
+.back-to-top{
+  bottom: 18px;
+}
