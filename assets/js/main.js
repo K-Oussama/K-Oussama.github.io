@@ -201,7 +201,7 @@ window.matchMedia('(prefers-color-scheme: dark)')
 function loadMediumPosts() {
     // Convert Medium feed to JSON using RSS2JSON API
     const MEDIUM_USER = '@korchispace';
-    const RSS2JSON_API_KEY = 'p7at1moljmo8nhkchlwqsilwwca71pc7bwtrxihe'; // from rss2json.com
+    const RSS2JSON_API_KEY = 'RSS2JSON_API_KEY_PLACEHOLDER'; // from rss2json.com
     const mediumRssUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${MEDIUM_USER}&api_key=${RSS2JSON_API_KEY}`;
 
     fetch(mediumRssUrl)
