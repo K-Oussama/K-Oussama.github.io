@@ -1,0 +1,57 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Add API key injection step
+      - name: Replace API Key
+        run: |
+          sed -i 's/RSS2JSON_API_KEY_PLACEHOLDER/${{ secrets.MEDIUM_API_KEY }}/g' assets/js/main.js
+      - name: Update Resource Versions
+        run: |
+          TIMESTAMP=$(date +%s)
+          find . -type f -name "index.html" -exec sed -i "s/\?v=[0-9]*\"/\?v=$TIMESTAMP\"/g" {} +
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+
+      - name: Clear cache headers
+        run: |
+          echo "Cache-Control: no-cache, no-store, must-revalidate" > _headers
+          echo "Pragma: no-cache" >> _headers
+          echo "Expires: 0" >> _headers
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
