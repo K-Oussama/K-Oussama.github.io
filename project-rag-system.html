@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Sebastian - Personal AI assistant powered by RAG that understands your life through calendar, email, notes, and drive integration">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Sebastian: Personal RAG Knowledge Assistant | Oussama Korchi</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="./assets/css/LineIcons.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="./assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--====== Project Detail css ======-->
+    <link rel="stylesheet" href="./assets/css/project-detail.css">
+</head>
+
+<body>
+    <!--====== HEADER PART START ======-->
+    <header class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="/">
+                                <img src="./assets/images/logo.png" alt="Logo" style="width: 100px;">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item"><a href="/">Home</a></li>
+                                    <li class="nav-item"><a href="/#about">About</a></li>
+                                    <li class="nav-item"><a href="/#work">Portfolio</a></li>
+                                    <li class="nav-item"><a href="/#blog">Blog</a></li>
+                                    <li class="nav-item"><a href="/#footer">Contact</a></li>
+                                </ul>
+                            </div>
+                            <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark">
+                                <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                                  <mask class="moon" id="moon-mask">
+                                    <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                    <circle cx="24" cy="10" r="6" fill="black" />
+                                  </mask>
+                                  <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                                  <g class="sun-beams" stroke="currentColor">
+                                    <line x1="12" y1="1" x2="12" y2="3" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                    <line x1="1" y1="12" x2="3" y2="12" />
+                                    <line x1="21" y1="12" x2="23" y2="12" />
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                                  </g>
+                                </svg>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== PROJECT HERO SECTION START ======-->
+    <section class="project-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="project-breadcrumb">
+                        <a href="/">Home</a> / <a href="/#work">Projects</a> / <span>Sebastian</span>
+                    </div>
+                    <h1 class="project-title">Sebastian: My Personal RAG Knowledge Assistant</h1>
+                    <p class="project-subtitle">A self-hosted AI assistant with access to calendar, email, maps, notes, and drive that learns how I live and work, keeping all data private and under my control.</p>
+                    
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="lni-calendar"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="lni-timer"></i>
+                            <span>1 month</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="lni-tag"></i>
+                            <span>Personal AI Assistant</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">RAG</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">pgvector</span>
+                        <span class="tag">GPT-4o-mini</span>
+                        <span class="tag">Self-Hosted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== PROJECT HERO SECTION ENDS ======-->
+
+    <!--====== PROJECT COVER IMAGE START ======-->
+    <section class="project-cover">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cover-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop" alt="RAG System Architecture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== PROJECT COVER IMAGE ENDS ======-->
+
+    <!--====== PROJECT CONTENT START ======-->
+    <section class="project-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h2>The Concept</h2>
+                        <p>Have you ever thought of an idea, opened Instagram, and the exact same thing shows up on your feed? That eerie moment when algorithms seem to know you better than you know yourself.</p>
+                        
+                        <p><strong>Now imagine having that kind of intelligence, but working for you, not against you.</strong></p>
+                        
+                        <p>No data harvesting, no ads, no cloud logging, just an assistant that actually remembers your world.</p>
+
+                        <div class="highlight-box" style="background: linear-gradient(135deg, #FA709A 0%, #FEE140 100%); color: white; padding: 2rem; border-radius: 8px; margin-top: 1.5rem;">
+                            <h4 style="color: white; margin-bottom: 1rem;">💡 Core Philosophy</h4>
+                            <p style="font-size: 1.1rem; margin-bottom: 0; opacity: 0.95;">"ChatGPT meets Jarvis, but all the data stays with me."</p>
+                        </div>
+
+                        <p style="margin-top: 2rem;">Sebastian isn't a chatbot. He's a <strong>personal memory system</strong>  (part calendar manager, part research assistant, part life archivist)</p>
+                        
+                        <p>He doesn't try to replace me; he observes how I work and makes sure I never lose track of what matters.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Why I Built This</h2>
+                        <p>Sebastian is built around one principle:</p>
+                        
+                        <div class="highlight-box">
+                            <h4 style="font-size: 1.5rem; text-align: center;">Context is everything.</h4>
+                        </div>
+
+                        <p>He doesn't just respond to prompts, he uses context from my digital life to make sense of what I ask.</p>
+
+                        <h3>Real Examples:</h3>
+                        <ul class="styled-list">
+                            <li><strong>"Remind me to reply to Youssef next week"</strong><br>→ He knows Youssef is in my Gmail threads</li>
+                            
+                            <li><strong>"Find me time to finish the proposal"</strong><br>→ He checks my Google Calendar</li>
+                            
+                            <li><strong>"Summarize my last meeting notes"</strong><br>→ He pulls data from Notion</li>
+                            
+                            <li><strong>"Where did I park last Tuesday?"</strong><br>→ He checks Google Maps location history</li>
+                        </ul>
+
+                        <p style="margin-top: 1.5rem; padding: 1rem; background: rgba(250, 112, 154, 0.1); border-left: 4px solid #FA709A; border-radius: 4px;">
+                            <strong>🔒 Privacy First:</strong> All of this works locally or through my own API keys, so my data never leaves my environment.
+                        </p>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="image-grid">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=500&fit=crop" alt="Personal Workspace">
+                        </div>
+                        <p class="image-caption">Sebastian integrates with my entire digital workspace</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Architecture Overview</h2>
+                        <p>Sebastian runs as a <strong>local API layer</strong> built with FastAPI, powered by a RAG engine, and enhanced by several personal integrations.</p>
+
+                        <div class="highlight-box" style="background: #f8f9fa; padding: 2rem; border-radius: 8px; font-family: monospace; font-size: 0.9rem; overflow-x: auto;">
+<pre style="margin: 0; color: #333;">
+┌──────────────────────────────┐
+│        FastAPI Core          │
+│   (Query Router + Auth)      │
+└─────────────┬────────────────┘
+              │
+    ┌─────────┼──────────┐
+    │         │          │
+ Notion     Gmail     Calendar
+  API        API        API
+    │         │          │
+    └─────────┼──────────┘
+              ↓
+       Context Aggregator
+              ↓
+   pgvector + OpenAI Embeddings
+              ↓
+         RAG Engine
+              ↓
+       GPT-4o-mini
+</pre>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🧰 Tech Stack</h2>
+                        
+                        <div class="tech-stack">
+                            <div class="tech-category">
+                                <h4>Backend & API</h4>
+                                <ul>
+                                    <li>FastAPI (Python)</li>
+                                    <li>PostgreSQL + pgvector</li>
+                                    <li>LangChain</li>
+                                    <li>Docker</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4>AI & Embeddings</h4>
+                                <ul>
+                                    <li>GPT-4o-mini</li>
+                                    <li>OpenAI Embeddings</li>
+                                    <li>text-embedding-3-small</li>
+                                    <li>RAG Pipeline</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Integrations</h4>
+                                <ul>
+                                    <li>Google Calendar API</li>
+                                    <li>Gmail API</li>
+                                    <li>Google Drive API</li>
+                                    <li>Google Maps API</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Tools & Auth</h4>
+                                <ul>
+                                    <li>Notion API</li>
+                                    <li>n8n Automation</li>
+                                    <li>Auth0 (future)</li>
+                                    <li>Self-hosted deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🧠 Memory System</h2>
+                        <p>Sebastian's long-term memory uses <strong>RAG (Retrieval-Augmented Generation)</strong>.<br>All my data, from meeting notes to location logs, is vectorized and stored in PostgreSQL with pgvector.</p>
+
+                        <h3>Database Schema</h3>
+                            <p>The memory system stores embeddings alongside metadata, enabling semantic search across all my digital information sources.</p>
+
+                        <h3 style="margin-top: 2rem;">Example Memory Entries</h3>
+                        <div class="tech-stack" style="margin-top: 1rem;">
+                            <div class="tech-category" style="background: rgba(102, 126, 234, 0.1); padding: 1rem; border-radius: 8px;">
+                                <h4>📝 Notion Note</h4>
+                                <p style="font-size: 0.9rem; margin: 0;">Tagged by project and topic</p>
+                            </div>
+                            <div class="tech-category" style="background: rgba(79, 172, 254, 0.1); padding: 1rem; border-radius: 8px;">
+                                <h4>📅 Calendar Event</h4>
+                                <p style="font-size: 0.9rem; margin: 0;">With participants and location</p>
+                            </div>
+                            <div class="tech-category" style="background: rgba(250, 112, 154, 0.1); padding: 1rem; border-radius: 8px;">
+                                <h4>📧 Gmail Thread</h4>
+                                <p style="font-size: 0.9rem; margin: 0;">Sender, subject, and content</p>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 2rem;">This means Sebastian can answer:</p>
+                        <ul class="styled-list">
+                            <li><strong>"What did I discuss with Youssef last week?"</strong></li>
+                            <li><strong>"Show me notes related to my next presentation."</strong></li>
+                            <li><strong>"What's my busiest weekday this month?"</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Example Workflow: "Summarize my week"</h2>
+                        <p>Let's say I ask Sebastian to summarize my week. Here's what happens internally:</p>
+
+                            <h4>1️⃣ Collect Context</h4>
+                            <p>Fetch events from Google Calendar, unread emails, and recent Notion notes.</p>
+
+                        
+                            <h4>2️⃣ Embed & Rank</h4>
+                            <p>Generate embeddings for all entries → use pgvector to find the most relevant ones.</p>
+                        
+
+                        
+                            <h4>3️⃣ Compose Prompt</h4>
+                            <p>Build a structured context summary (meetings, notes, tasks).</p>
+                        
+
+                        
+                            <h4>4️⃣ Generate Insight</h4>
+                            <p>Ask GPT-4o-mini to produce a weekly summary with actionable insights.</p>
+                        
+
+                        <h3 style="margin-top: 2rem;">Sebastian's Response:</h3>
+                        <div class="quote-block" style="background: #f8f9fa; border-left: 4px solid #667eea;">
+                            <p style="color: #333;">"You had 5 meetings (3 related to your AI projects), finished 2 Notion tasks, and got 4 unread follow-ups. You've been most active between 10-14h. Would you like me to schedule a review slot tomorrow?"</p>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Hosting</h2>
+                        <p>Sebastian is <strong>self-hosted</strong>, meaning:</p>
+
+                        <div class="stats-grid">
+                            <div class="stat-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                                <h3 style="color: white;">💾</h3>
+                                <p style="opacity: 0.9;">You own your memory</p>
+                            </div>
+                            <div class="stat-card" style="background: linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%); color: white;">
+                                <h3 style="color: white;">🎛️</h3>
+                                <p style="opacity: 0.9;">Full control</p>
+                            </div>
+                            <div class="stat-card" style="background: linear-gradient(135deg, #43E97B 0%, #38F9D7 100%); color: white;">
+                                <h3 style="color: white;">📤</h3>
+                                <p style="opacity: 0.9;">Export anytime</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🚀 Next Steps</h2>
+                        <ul class="styled-list">
+                            <li><strong>Voice Interface:</strong> Add voice-to-text using Whisper + TTS for hands-free interaction</li>
+                            
+                            <li><strong>Home Automation:</strong> Connect to Home Assistant for environment control</li>
+                            
+                            <li><strong>Local Embeddings:</strong> Use nomic-embed-text for fully offline operation</li>
+                            
+                            <li><strong>Daily Journaling:</strong> Auto-generate daily journal from my data patterns</li>
+                            
+                            <li><strong>Notion Dashboard:</strong> Stream responses via WebSocket to live Notion dashboard</li>
+                            
+                            <li><strong>Proactive Insights:</strong> Sebastian suggests optimizations before I ask</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block cta-section">
+                        <h3>Interested in building your own personal AI?</h3>
+                        <p>Let's discuss RAG systems, self-hosted AI, and privacy-first automation.</p>
+                        <a href="mailto:contact@korchi.me" class="main-btn">Let's Connect</a>
+                    </div>
+
+                    <div class="project-navigation">
+                        <a href="project-ai-agent-system.html" class="nav-link">
+                            <i class="lni-arrow-left"></i>
+                            <span>Previous Project</span>
+                        </a>
+                        <a href="/#work" class="nav-link next">
+                            <span>All Projects</span>
+                            <i class="lni-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== PROJECT CONTENT ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+    <footer id="footer" class="footer-area">
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Copyright © 2025. <a href="/" rel="nofollow">Korchi</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== jquery js ======-->
+    <script src="./assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="./assets/js/scrolling-nav.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

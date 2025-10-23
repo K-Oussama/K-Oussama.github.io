@@ -982,6 +982,235 @@ p {
         border-color: #fff; }
 
 /*===========================
+        4.5 AI PROJECTS css 
+===========================*/
+.ai-projects-area {
+  background: #fff;
+}
+
+.ai-project-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  margin-bottom: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(117, 78, 249, 0.15);
+}
+
+.ai-project-card .project-image {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.ai-project-card .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.ai-project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.ai-project-card .project-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ai-project-card .project-info {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-project-card .project-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.ai-project-card .project-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.ai-project-card .project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.ai-project-card .tech-tag {
+  background: #f5f7fa;
+  color: #754ef9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.ai-project-card:hover .tech-tag {
+  background: #754ef9;
+  color: #fff;
+  border-color: #754ef9;
+}
+
+.ai-project-card .project-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.ai-project-card .stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.ai-project-card .stat i {
+  color: #754ef9;
+  font-size: 16px;
+}
+
+.ai-project-card .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #754ef9;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.ai-project-card .project-link:hover {
+  gap: 12px;
+  color: #5d3dd1;
+}
+
+.ai-project-card .project-link i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.ai-project-card:hover .project-link i {
+  transform: translateX(4px);
+}
+
+/* Dark mode support */
+[data-theme="dark"] .ai-projects-area {
+  background: #1a1a2e;
+}
+
+[data-theme="dark"] .ai-project-card {
+  background: #16213e;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .ai-project-card:hover {
+  box-shadow: 0 20px 60px rgba(117, 78, 249, 0.3);
+}
+
+[data-theme="dark"] .ai-project-card .project-title {
+  color: #f1f1f1;
+}
+
+[data-theme="dark"] .ai-project-card .project-description {
+  color: #c5c5c5;
+}
+
+[data-theme="dark"] .ai-project-card .tech-tag {
+  background: #0f3460;
+  border-color: #16213e;
+}
+
+[data-theme="dark"] .ai-project-card:hover .tech-tag {
+  background: #754ef9;
+  border-color: #754ef9;
+}
+
+[data-theme="dark"] .ai-project-card .project-stats {
+  border-top-color: #2c3e50;
+}
+
+[data-theme="dark"] .ai-project-card .stat {
+  color: #c5c5c5;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .ai-project-card .project-image {
+    height: 240px;
+  }
+  
+  .ai-project-card .project-info {
+    padding: 25px;
+  }
+  
+  .ai-project-card .project-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ai-projects-area {
+    padding-top: 70px !important;
+    padding-bottom: 80px !important;
+  }
+  
+  .ai-project-card {
+    margin-bottom: 30px;
+  }
+  
+  .ai-project-card .project-image {
+    height: 220px;
+  }
+  
+  .ai-project-card .project-title {
+    font-size: 20px;
+  }
+  
+  .ai-project-card .project-description {
+    font-size: 14px;
+  }
+}
+
+/*===========================
         5.WORK css 
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
